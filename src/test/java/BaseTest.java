@@ -19,9 +19,9 @@ public class BaseTest {
     public void initDriver() throws MalformedURLException {
         final DesiredCapabilities desiredCapabilities = new DesiredCapabilities();   // settings
         desiredCapabilities.setCapability("platformName","Android");
-        desiredCapabilities.setCapability("platformVersion","9");  //9
-        desiredCapabilities.setCapability("deviceName","Redmi"); // Redmi
-        desiredCapabilities.setCapability("udid","05f9990c0006");  // 05f9990c0006
+        desiredCapabilities.setCapability("platformVersion","7");  //9
+        desiredCapabilities.setCapability("deviceName","Xperia XA Dual_62c1"); // Redmi
+        desiredCapabilities.setCapability("udid","RQ3005VDRM");  // 05f9990c0006
         desiredCapabilities.setCapability("browserName","Chrome");
 
         webDriver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities); //implement =AndroidDriver
